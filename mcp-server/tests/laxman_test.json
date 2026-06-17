@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "Single User Reg Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register Laxman",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Laxman Kumar\",\n  \"username\": \"laxman\",\n  \"email\": \"laxman_test@example.com\",\n  \"mobile\": \"9876543210\",\n  \"password\": \"laxman_25\",\n  \"state\": \"Madhya Pradesh\",\n  \"district\": \"Bhopal\",\n  \"block\": \"Bhopal North\",\n  \"village\": \"Village X\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/users/register",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "users", "register"]
+        }
+      }
+    }
+  ]
+}
